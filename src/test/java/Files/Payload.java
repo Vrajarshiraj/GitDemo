@@ -22,7 +22,6 @@ public class Payload
                 "  \"language\": \"RandomNumbers\"\n" +
                 "}";
     }
-
     public static String UpdatePlace()
     {
          return "{\n" +

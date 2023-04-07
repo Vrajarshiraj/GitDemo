@@ -30,6 +30,7 @@ public class POGalaxy
 
         driver.findElement(By.cssSelector("input[name*='0']")).sendKeys("123456");
         driver.findElement(By.xpath("//button[text()='log in']")).click();
+        System.out.println("Login Successfully");
 
         WebDriverWait explicitwait=new WebDriverWait(driver,Duration.ofSeconds(20));
         explicitwait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//i[@class='fas fa-bars']"))).click();
