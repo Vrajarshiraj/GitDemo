@@ -1,9 +1,9 @@
 public class Inherit
 {
     String Cricketer="M S Dhoni";
-    public void Sum()
+    public int RateOfInterest()
     {
-        System.out.println("Sum Super Keyword Method");
+        return 0;
     }
 
     public void Sub()
