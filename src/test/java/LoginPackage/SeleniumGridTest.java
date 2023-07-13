@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class SeleniumGridTest  {
+public class SeleniumGridTest {
 
     @Test
     public void homepagecheck() throws MalformedURLException {
