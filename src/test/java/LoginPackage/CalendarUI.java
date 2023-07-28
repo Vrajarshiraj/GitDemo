@@ -11,7 +11,7 @@ public class CalendarUI
 {
     public static void main(String[] args)
     {
-        System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver2.exe");
         WebDriver driver=new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/#");
