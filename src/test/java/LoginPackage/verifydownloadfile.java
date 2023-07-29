@@ -7,19 +7,34 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.io.File;
 import java.io.IOException;
 import java.sql.Time;
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 public class verifydownloadfile {
     public static void main(String[] args) throws IOException, InterruptedException {
         WebDriverManager.chromedriver().setup();
 
-        WebDriver driver=new ChromeDriver();
+        String downloadPath=System.getProperty("user.dir");
+
+        HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+
+        chromePrefs.put("profile.default_content_settings.popups", 0);
+
+        chromePrefs.put("download.default_directory", downloadPath);
+
+
+        ChromeOptions chromeOptions=new ChromeOptions();
+        chromeOptions.setExperimentalOption("prefs",chromePrefs);
+
+        WebDriver driver=new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
+
 
         driver.get("https://qaapiv4.sikkasoft.com/v4/portal/authentication/login");
 
@@ -32,9 +47,9 @@ public class verifydownloadfile {
         Thread.sleep(2000);
 
 
-        File file=new File("C:\\Users\\vrajarshiraj.shah\\Downloads\\Sikka AXAR QA Testing_Team_member(s)_List_7_28_2023.csv");
+        File file=new File(downloadPath+"/Sikka AXAR QA Testing_Team_member(s)_List_7_29_2023.csv");
         if(file.exists())
-        {
+        {            Assert.assertTrue(file.exists());
             System.out.println("file was found.");
         }
     }
