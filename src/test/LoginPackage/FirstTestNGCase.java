@@ -4,14 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 public class FirstTestNGCase
@@ -19,8 +17,6 @@ public class FirstTestNGCase
     ChromeOptions options;
 
     static WebDriver driver;
-
-    String browser="Chrome";
 
 
     @BeforeMethod
@@ -32,14 +28,8 @@ public class FirstTestNGCase
 
         System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver.exe");
 
-        browser=System.getProperty("browser")!=null?System.getProperty("browser") : browser;
 
-        if(Objects.equals(browser, "chrome")) {
-            driver = new ChromeDriver(options);
-        } else if (Objects.equals(browser,"Firefox")) {
-            driver=new FirefoxDriver();
-        }
-
+        driver = new ChromeDriver(options);
 
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
