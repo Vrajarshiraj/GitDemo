@@ -1,4 +1,4 @@
-package test.LoginPackage;
+package main.java;
 
 import com.mysql.cj.protocol.Resultset;
 import io.github.bonigarcia.wdm.WebDriverManager;
