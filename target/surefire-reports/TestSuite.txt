@@ -1,10 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 3.888 s <<< FAILURE! -- in TestSuite
-test.LoginPackage.FirstTestNGCase.Setup -- Time elapsed: 2.332 s <<< FAILURE!
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 3.537 s <<< FAILURE! -- in TestSuite
+test.LoginPackage.FirstTestNGCase.Setup -- Time elapsed: 2.521 s <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.LoginPackage.FirstTestNGCase.driver" is null
-	at test.LoginPackage.FirstTestNGCase.Setup(FirstTestNGCase.java:44)
+	at test.LoginPackage.FirstTestNGCase.Setup(FirstTestNGCase.java:52)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)

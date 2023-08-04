@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-31T18:05:05 IST" name="Suite" finished-at="2023-07-31T18:05:05 IST" duration-ms="150">
+  <suite started-at="2023-08-02T09:29:34 IST" name="Suite" finished-at="2023-08-02T09:29:34 IST" duration-ms="128">
     <groups>
     </groups>
-    <test started-at="2023-07-31T18:05:05 IST" name="Test" finished-at="2023-07-31T18:05:05 IST" duration-ms="150">
+    <test started-at="2023-08-02T09:29:34 IST" name="Test" finished-at="2023-08-02T09:29:34 IST" duration-ms="128">
       <class name="test.LoginPackage.FirstTestNGCase">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:test.LoginPackage.FirstTestNGCase@676cf48]" started-at="2023-07-31T18:05:05 IST" name="Setup" finished-at="2023-07-31T18:05:05 IST" duration-ms="47" status="FAIL">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:test.LoginPackage.FirstTestNGCase@676cf48]" started-at="2023-08-02T09:29:34 IST" name="Setup" finished-at="2023-08-02T09:29:34 IST" duration-ms="23" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.LoginPackage.FirstTestNGCase.driver" is null]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.LoginPackage.FirstTestNGCase.driver" is null
-at test.LoginPackage.FirstTestNGCase.Setup(FirstTestNGCase.java:44)
+at test.LoginPackage.FirstTestNGCase.Setup(FirstTestNGCase.java:52)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -45,14 +45,14 @@ at java.base/java.lang.Thread.run(Thread.java:1623)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="Login()[pri:0, instance:test.LoginPackage.FirstTestNGCase@676cf48]" started-at="2023-07-31T18:05:05 IST" name="Login" finished-at="2023-07-31T18:05:05 IST" duration-ms="0" status="SKIP">
+        <test-method signature="Login()[pri:0, instance:test.LoginPackage.FirstTestNGCase@676cf48]" started-at="2023-08-02T09:29:34 IST" name="Login" finished-at="2023-08-02T09:29:34 IST" duration-ms="1" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.LoginPackage.FirstTestNGCase.driver" is null]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "test.LoginPackage.FirstTestNGCase.driver" is null
-at test.LoginPackage.FirstTestNGCase.Setup(FirstTestNGCase.java:44)
+at test.LoginPackage.FirstTestNGCase.Setup(FirstTestNGCase.java:52)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -83,7 +83,7 @@ at java.base/java.lang.Thread.run(Thread.java:1623)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="BrowserClose()[pri:0, instance:test.LoginPackage.FirstTestNGCase@676cf48]" started-at="2023-07-31T18:05:05 IST" name="BrowserClose" finished-at="2023-07-31T18:05:05 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="BrowserClose()[pri:0, instance:test.LoginPackage.FirstTestNGCase@676cf48]" started-at="2023-08-02T09:29:34 IST" name="BrowserClose" finished-at="2023-08-02T09:29:34 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserClose -->
