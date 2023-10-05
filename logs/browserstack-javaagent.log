@@ -110,3 +110,9 @@
 23:39:38.947 [main] INFO  c.b.config.BrowserStackConfig - ERROR
 23:39:38.953 [main] INFO  c.b.config.BrowserStackConfig - WARN
 23:39:41.246 [main] INFO  c.b.config.BrowserStackConfig - INFO
+23:58:51.614 [main] INFO  c.b.config.BrowserStackConfig - ERROR
+23:58:51.619 [main] INFO  c.b.config.BrowserStackConfig - WARN
+23:58:52.256 [main] INFO  c.b.config.BrowserStackConfig - INFO
+00:00:37.099 [main] INFO  c.b.config.BrowserStackConfig - ERROR
+00:00:37.108 [main] INFO  c.b.config.BrowserStackConfig - WARN
+00:00:37.823 [main] INFO  c.b.config.BrowserStackConfig - INFO
