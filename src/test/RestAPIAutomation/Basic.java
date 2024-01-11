@@ -15,6 +15,7 @@ public class Basic {
 
     public static void main(String[] args) throws IOException
     {
+        //Add Place API
         String payload=new String(Files.readAllBytes(Paths.get("V:\\APIV4 Portal\\REST Assured\\AddPlace.txt")));
         RestAssured.baseURI= "https://rahulshettyacademy.com";
         String response =given().log().all().queryParam("key","qaclick123")
